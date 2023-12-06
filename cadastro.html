@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="shortcut icon" href="ingresso-logo-v1-mobile-final.svg">
+      <title>Ingressos on</title>
+    <link rel="stylesheet" href="novo.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <img src="ingresso-logo-v1-mobile-final.svg" id="logo">
+          
+          <ul class="nav-list">
+            
+            
+            
+          </ul>
+        </nav>
+      </header>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Cadastro</h1>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" id="email" autofocus="true" />
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite sua senha" />
+            <input type="button" value="Cadastrar" class="btn" onclick="confirmaSaida();" />
+        </form>
+    </div>
+    <script>
+        function confirmaSaida() {
+            var confirmado = confirm("Voltar para Home?");
+              if (confirmado === true) {
+              self.location = "file:///C:/Users/Micro/Desktop/Projeto-des.web/Compra%20de%20ingressos/html/index.html";
+              }
+        }
+
+
+    </script>
+</body>
+</html>
