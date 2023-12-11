@@ -12,7 +12,7 @@
         
     </style>
 </head>
-<body>
+<body id="corpo">
     <header>
         <header>
             <nav>
@@ -23,7 +23,6 @@
             </nav>
           </header>
           <br>
-      <h2 style="color:aliceblue;">Em alta</h2>
       <a id="cadastro" href="cadastro.html" class="jiButton">cadastro</a>
       <a id="login" href="login.html" class="jiButton">login</a>
       <a id="grupo" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple" class="jiButton">Grupo no Telegram</a>
@@ -39,6 +38,7 @@
     </div>
 
     <div class="todo"> 
+        <input type="button" value="rosa da Barbie" onclick="MudarCor('white', 'black');"/>
         <div class="filme">
             <a href="pag2.html">
                 <img src="fnaf.webp" class="zoomedImage">
@@ -119,6 +119,19 @@
         function resetZoom(image) {
             image.style.transform = 'scale(1)';
         }
+        function MudarCor(corDeFundo, corDoTexto){
+            document.getElementById('corpo').style.backgroundColor = corDeFundo;
+            document.getElementById('corpo').style.color = corDoTexto;
+        if(estiloCorpo.backgroundColor== corDeFundo){
+            corpo.style.backgroundColor='';
+            corpo.style.color='';
+        }else{
+            corpo.style.backgroundColor= corDeFundo;
+            corpo.style.color= CorDoTexto;
+        }
+    }
+       
+        
         prompt("digite seu e-mail para receber novidades") 
         alert("os novos filmes que estiverem disponiveis aparecerão em seu e-mail!")
     </script>
