@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tickt cine</title>
     <link rel="stylesheet" href="principal.css" />
-    <style>
-        .zoomedImage {
-            transition: transform 0.3s ease;
-        }
-        
-    </style>
 </head>
-<body id="corpo">
+
+<body>
     <header>
         <header>
             <nav>
-              <img src="ingresso-logo-v1-mobile-final.svg" id="logo">
-              <a class="logo">Ingressos on</a>        
-              <ul class="nav-list">                      
-             </ul>
+                <img src="ingresso-logo-v1-mobile-final.svg" id="logo">
+                <a class="logo" href="#">Ingressos on</a>
+                <ul class="nav-list">
+                    <!-- Se houver links de navegação, você pode adicioná-los aqui -->
+                </ul>
             </nav>
-          </header>
-          <br>
-      <a id="cadastro" href="cadastro.html" class="jiButton">cadastro</a>
-      <a id="login" href="login.html" class="jiButton">login</a>
-      <a id="grupo" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple" class="jiButton">Grupo no Telegram</a>
+        </header>
+        <br>
+        <h2 style="color: aliceblue;">Em alta</h2>
+        <a id="cadastro" href="cadastro.html" class="jiButton">cadastro</a>
+        <a id="login" href="login.html" class="jiButton">login</a>
+        <a id="grupo" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple" class="jiButton">Grupo no Telegram</a>
     </header>
 
     <div class="container">
@@ -34,11 +32,13 @@
             <h2>14 de dezembro nos cinemas</h2>
             <a id="trailer" href="https://www.youtube.com/watch?v=JEWFRJ4vZAw" target="_blank" class="jiButton">Ver trailer</a>
         </div>
-        <img src="https://cinepop.com.br/wp-content/uploads/2021/10/wonka-2.jpg" id="wonka" alt="hero banner" loading="lazy" >
+        <img src="https://cinepop.com.br/wp-content/uploads/2021/10/wonka-2.jpg" id="wonka" alt="hero banner" loading="lazy">
     </div>
 
-    <div class="todo"> 
-        <input type="button" value="rosa da Barbie" onclick="MudarCor('white', 'black');"/>
+    <div class="todo">
+        <div class="alta">
+            <h1>
+        </div>
         <div class="filme">
             <a href="pag2.html">
                 <img src="fnaf.webp" class="zoomedImage">
@@ -92,82 +92,113 @@
                 <h3>Mussum</h3>
             </div>
         </div>
-    </div> 
-    <script>
-        // Adiciona o evento de mouseover para aplicar o zoom
-        var zoomedImages = document.querySelectorAll('.zoomedImage');
+    </div>
 
-        zoomedImages.forEach(function(image) {
-            image.addEventListener('mouseover', function() {
-                zoomIn(image);
-            });
-
-            image.addEventListener('mouseout', function() {
-                resetZoom(image);
-            });
-        });
-
-        // Função para aplicar o zoom na imagem
-        function zoomIn(image) {
-            var currentTransform = window.getComputedStyle(image).getPropertyValue('transform');
-            var currentScale = parseFloat(currentTransform.split(',')[3]) || 1;
-
-            var newScale = currentScale * 1.2;
-            image.style.transform = 'scale(' + newScale + ')';
-        }
-
-        function resetZoom(image) {
-            image.style.transform = 'scale(1)';
-        }
-        function MudarCor(corDeFundo, corDoTexto){
-            document.getElementById('corpo').style.backgroundColor = corDeFundo;
-            document.getElementById('corpo').style.color = corDoTexto;
-        if(estiloCorpo.backgroundColor== corDeFundo){
-            corpo.style.backgroundColor='';
-            corpo.style.color='';
-        }else{
-            corpo.style.backgroundColor= corDeFundo;
-            corpo.style.color= CorDoTexto;
-        }
-    }
-       
-        
-        prompt("digite seu e-mail para receber novidades") 
-        alert("os novos filmes que estiverem disponiveis aparecerão em seu e-mail!")
-    </script>
- <footer class="rodape" id="contato">
-    <div class="rodape-div">
-
-        <div class="rodape1">
-            <div class="coluna1">
-                <span><b>LOCAL</b></span>
-                <p>Euclides da Cunha, BA, 48500-000</p>
+    <div class="noticias">
+        <div class="card">
+            <figure class="thumbnail">
+                <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/0c/02/0c02de9fd29724aa0834e9e10658ed52.jpg" alt="wonka">
+            </figure>
+            <div class="titulo">
+                <div class="meta-category">
+                    <span class="meta-pre-category">NOTÍCIAS</span> - Negócio
+                </div>
+                <div class="data">
+                    quarta-feira, 6 de dezembro de 2023
+                </div>
+                <h2 class="subtitulo">
+                    <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054558/">Como Wonka com Timothee Chalamet, veja 3 filmes que adaptaram as histórias de Roald Dahl</a>
+                </h2>
             </div>
         </div>
 
-        <div class="rodape2">
-            <div class="coluna2">
-                <span><b>Entre em contato conosco</b></span>
-                <p><a href="https://www.instagram.com/cadublack_/">Instagram Cadu</a></p>
-                <p><a href="https://www.instagram.com/_isa.dias__/">Instagram Isabela</a></p>
-                <p><a href="https://www.instagram.com/agente_da_cia_mascarado/">Instagram Ernesto</a></p>
+        <div class="card">
+            <figure class="thumbnail">
+                <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/6a/94/6a94d058bb4c41c529c1ab2e597b13b5.jpg" alt="asmarvels">
+            </figure>
+            <div class="titulo">
+                <div class="meta-category">
+                    <span class="meta-pre-category">NOTÍCIAS</span> - Negócio
+                </div>
+                <div class="data">
+                    quarta-feira, 6 de dezembro de 2023
+                </div>
+                <h2 class="subtitulo">
+                    <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054565/">Disney varre para debaixo do tapete a pior estreia da história da Marvel: Estúdio vai parar de reportar bilheteria de As Marvels</a>
+                </h2>
             </div>
         </div>
 
-        <div class="rodape3">
-            <div class="coluna3">
-                <span><b>Links</b></span>
-                <p><a href="#servicos">Serviços</a></p>
-                <p><a href="#sobre">Sobre</a></p>
+        <div class="card">
+            <figure class="thumbnail">
+                <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/a2/ca/a2cae60366908d8519a75645fb6fcd80.jpg" alt="wonka">
+            </figure>
+            <div class="titulo">
+                <div class="meta-category">
+                    <span class="meta-pre-category">NOTÍCIAS</span> - Lançamentos
+                </div>
+                <div class="data">
+                    quarta-feira, 6 de dezembro de 2023
+                </div>
+                <h2 class="subtitulo">
+                    <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054558/">Retorno de Thomas Shelby? Cillian Murphy confessa o que pensa sobre spin-off de Peaky Blinders</a>
+                </h2>
             </div>
         </div>
 
-        <div class="rodape4">
-            <div class="coluna4">
-                <span><b>Outros</b></span>
-                <p><a href="politicas">Politicas de privacidade</a></p>
+        <div class="card">
+            <figure class="thumbnail">
+                <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/08/de/08de08b068f36026359c78f7816f1943.jpg" alt="asmarvels">
+            </figure>
+            <div class="titulo">
+                <div class="meta-category">
+                    <span class="meta-pre-category">NOTÍCIAS</span> - Visto na Web
+                </div>
+                <div class="data">
+                    sexta-feira, 1 de dezembro de 2023
+                </div>
+                <h2 class="subtitulo">
+                    <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054565/">Napoleão: Essa cena poderia ter feito o final ser visto de forma MUITO diferente</a>
+                </h2>
             </div>
         </div>
-</footer>
+    </div>
+
+    <footer class="rodape" id="contato">
+        <div class="rodape-div">
+
+            <div class="rodape1">
+                <div class="coluna1">
+                    <span><b>LOCAL</b></span>
+                    <p>Euclides da Cunha, BA, 48500-000</p>
+                </div>
+            </div>
+
+            <div class="rodape2">
+                <div class="coluna2">
+                    <span><b>Entre em contato conosco</b></span>
+                    <p><a href="https://www.instagram.com/cadublack_/">Instagram Cadu</a></p>
+                    <p><a href="https://www.instagram.com/_isa.dias__/">Instagram Isabela</a></p>
+                    <p><a href="https://www.instagram.com/agente_da_cia_mascarado/">Instagram Ernesto</a></p>
+                </div>
+            </div>
+
+            <div class="rodape3">
+                <div class="coluna3">
+                    <span><b>Links</b></span>
+                    <p><a href="#servicos">Serviços</a></p>
+                    <p><a href="#sobre">Sobre</a></p>
+                </div>
+            </div>
+
+            <div class="rodape4">
+                <div class="coluna4">
+                    <span><b>Outros</b></span>
+                    <p><a href="politicas">Politicas de privacidade</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
