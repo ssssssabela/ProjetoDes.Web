@@ -1,41 +1,52 @@
+User
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tickt cine</title>
     <link rel="stylesheet" href="principal.css" />
-</head>
+     <style>
+        .zoomedImage {
+            transition: transform 0.3s ease;
+        }
+        body {
+            transition: background-color 0.5s;
+        }
 
+        .modo-claro {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
 <body>
     <header>
         <header>
             <nav>
-                <img src="ingresso-logo-v1-mobile-final.svg" id="logo">
-                <a class="logo" href="#">Ingressos on</a>
-                <ul class="nav-list">
-                    <!-- Se houver links de navegação, você pode adicioná-los aqui -->
-                </ul>
+              <img src="ingresso-logo-v1-mobile-final.svg" id="logo">
+              <a class="logo">Ingressos on</a>        
+              <ul class="nav-list">                      
+             </ul>
             </nav>
-        </header>
-        <br>
-        <h2 style="color: aliceblue;">Em alta</h2>
-        <a id="cadastro" href="cadastro.html" class="jiButton">cadastro</a>
-        <a id="login" href="login.html" class="jiButton">login</a>
-        <a id="grupo" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple" class="jiButton">Grupo no Telegram</a>
+          </header>
+          <br>
+      <h2 style="color:aliceblue;">Em alta</h2>
+      <a id="cadastro" href="cadastro.html" class="jiButton">cadastro</a>
+      <a id="login" href="login.html" class="jiButton">login</a>
+      <a id="grupo" href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_multiple" class="jiButton">Grupo no Telegram</a>
     </header>
-
     <div class="container">
         <div id="texto">
             <h1>Wonka</h1>
             <h2>14 de dezembro nos cinemas</h2>
             <a id="trailer" href="https://www.youtube.com/watch?v=JEWFRJ4vZAw" target="_blank" class="jiButton">Ver trailer</a>
         </div>
-        <img src="https://cinepop.com.br/wp-content/uploads/2021/10/wonka-2.jpg" id="wonka" alt="hero banner" loading="lazy">
+        <img src="https://cinepop.com.br/wp-content/uploads/2021/10/wonka-2.jpg" id="wonka" alt="hero banner" loading="lazy" >
     </div>
-
-    <div class="todo">
+    <h1 style="text-align: left; color: aliceblue;">Em Alta</h1>
+    <div class="todo"> 
+        <button id="toggleModo" onclick="toggleModo()">Toggle Modo Claro</button>
         <div class="alta">
             <h1>
         </div>
@@ -92,78 +103,112 @@
                 <h3>Mussum</h3>
             </div>
         </div>
-    </div>
-
+    </div> 
+    <h1 style="text-align: left; color: aliceblue;">Notícias</h1>
     <div class="noticias">
-        <div class="card">
-            <figure class="thumbnail">
-                <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/0c/02/0c02de9fd29724aa0834e9e10658ed52.jpg" alt="wonka">
-            </figure>
-            <div class="titulo">
-                <div class="meta-category">
-                    <span class="meta-pre-category">NOTÍCIAS</span> - Negócio
+            <div class="card">
+                <figure class="thumbnail">
+                    <img class="imagem"  src="https://br.web.img3.acsta.net/c_400_225/img/0c/02/0c02de9fd29724aa0834e9e10658ed52.jpg" alt="wonka">
+                </figure>
+                <div class="titulo">
+                    <div class="meta-category">
+                        <span class="meta-pre-category">NOTÍCIAS</span> - Negócio
+                    </div>
+                    <div class="data">
+                        quarta-feira, 6 de dezembro de 2023
+                    </div>
+                    <h2 class="subtitulo">
+                        <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054558/">Como Wonka com Timothee Chalamet, veja 3 filmes que adaptaram as histórias de Roald Dahl</a>
+                    </h2>
                 </div>
-                <div class="data">
-                    quarta-feira, 6 de dezembro de 2023
-                </div>
-                <h2 class="subtitulo">
-                    <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054558/">Como Wonka com Timothee Chalamet, veja 3 filmes que adaptaram as histórias de Roald Dahl</a>
-                </h2>
             </div>
-        </div>
+    
+            <div class="card">
+                <figure class="thumbnail">
+                    <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/6a/94/6a94d058bb4c41c529c1ab2e597b13b5.jpg" alt="asmarvels">                    
+                </figure>
+                <div class="titulo">
+                    <div class="meta-category">
+                        <span class="meta-pre-category">NOTÍCIAS</span> - Negócio
+                    </div>
+                    <div class="data">
+                        quarta-feira, 6 de dezembro de 2023
+                    </div>
+                    <h2 class="subtitulo">
+                        <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054565/">Disney varre para debaixo do tapete a pior estreia da história da Marvel: Estúdio vai parar de reportar bilheteria de As Marvels</a>
+                    </h2>
+                </div>
+            </div>
 
-        <div class="card">
-            <figure class="thumbnail">
-                <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/6a/94/6a94d058bb4c41c529c1ab2e597b13b5.jpg" alt="asmarvels">
-            </figure>
-            <div class="titulo">
-                <div class="meta-category">
-                    <span class="meta-pre-category">NOTÍCIAS</span> - Negócio
+            <div class="card">
+                <figure class="thumbnail">
+                    <img class="imagem"  src="https://br.web.img3.acsta.net/c_400_225/img/a2/ca/a2cae60366908d8519a75645fb6fcd80.jpg" alt="wonka">
+                </figure>
+                <div class="titulo">
+                    <div class="meta-category">
+                        <span class="meta-pre-category">NOTÍCIAS</span> - Lançamentos
+                    </div>
+                    <div class="data">
+                        quarta-feira, 6 de dezembro de 2023
+                    </div>
+                    <h2 class="subtitulo">
+                        <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054558/">Retorno de Thomas Shelby? Cillian Murphy confessa o que pensa sobre spin-off de Peaky Blinders</a>
+                    </h2>
                 </div>
-                <div class="data">
-                    quarta-feira, 6 de dezembro de 2023
-                </div>
-                <h2 class="subtitulo">
-                    <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054565/">Disney varre para debaixo do tapete a pior estreia da história da Marvel: Estúdio vai parar de reportar bilheteria de As Marvels</a>
-                </h2>
             </div>
-        </div>
-
-        <div class="card">
-            <figure class="thumbnail">
-                <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/a2/ca/a2cae60366908d8519a75645fb6fcd80.jpg" alt="wonka">
-            </figure>
-            <div class="titulo">
-                <div class="meta-category">
-                    <span class="meta-pre-category">NOTÍCIAS</span> - Lançamentos
+    
+            <div class="card">
+                <figure class="thumbnail">
+                    <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/08/de/08de08b068f36026359c78f7816f1943.jpg" alt="asmarvels">                    
+                </figure>
+                <div class="titulo">
+                    <div class="meta-category">
+                        <span class="meta-pre-category">NOTÍCIAS</span> - Visto na Web
+                    </div>
+                    <div class="data">
+                        sexta-feira, 1 de dezembro de 2023
+                    </div>
+                    <h2 class="subtitulo">
+                        <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054565/">Napoleão: Essa cena poderia ter feito o final ser visto de forma MUITO diferente</a>
+                    </h2>
                 </div>
-                <div class="data">
-                    quarta-feira, 6 de dezembro de 2023
-                </div>
-                <h2 class="subtitulo">
-                    <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054558/">Retorno de Thomas Shelby? Cillian Murphy confessa o que pensa sobre spin-off de Peaky Blinders</a>
-                </h2>
             </div>
-        </div>
-
-        <div class="card">
-            <figure class="thumbnail">
-                <img class="imagem" src="https://br.web.img3.acsta.net/c_400_225/img/08/de/08de08b068f36026359c78f7816f1943.jpg" alt="asmarvels">
-            </figure>
-            <div class="titulo">
-                <div class="meta-category">
-                    <span class="meta-pre-category">NOTÍCIAS</span> - Visto na Web
-                </div>
-                <div class="data">
-                    sexta-feira, 1 de dezembro de 2023
-                </div>
-                <h2 class="subtitulo">
-                    <a class="meta-title-link" href="https://www.adorocinema.com/noticias/filmes/noticia-1000054565/">Napoleão: Essa cena poderia ter feito o final ser visto de forma MUITO diferente</a>
-                </h2>
-            </div>
-        </div>
     </div>
 
+        
+
+    
+    <script>
+        var zoomedImages = document.querySelectorAll('.zoomedImage');
+
+        zoomedImages.forEach(function(image) {
+            image.addEventListener('mouseover', function() {
+                zoomIn(image);
+            });
+
+            image.addEventListener('mouseout', function() {
+                resetZoom(image);
+            });
+        });
+
+        
+        function zoomIn(image) {
+            var currentTransform = window.getComputedStyle(image).getPropertyValue('transform');
+            var currentScale = parseFloat(currentTransform.split(',')[3]) || 1;
+
+            var newScale = currentScale * 1.2;
+            image.style.transform = 'scale(' + newScale + ')';
+        }
+
+        function resetZoom(image) {
+            image.style.transform = 'scale(1)';
+        }
+
+        function toggleModo() {
+            document.body.classList.toggle("modo-claro");
+        }
+    
+    </script>
     <footer class="rodape" id="contato">
         <div class="rodape-div">
 
@@ -195,10 +240,8 @@
                 <div class="coluna4">
                     <span><b>Outros</b></span>
                     <p><a href="politicas">Politicas de privacidade</a></p>
-                </div>
             </div>
         </div>
     </footer>
 </body>
-
-</html>
+</html> 
