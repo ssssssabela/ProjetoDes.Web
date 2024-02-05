@@ -1,56 +1,62 @@
-#logo{
-    position:block;
-    top: 20%;
-    left:1%;
-}
-  
 a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
+    color: #afafaf;
+    font: 300px;
 }
 
   
 .logo {
-    font-size: 24px;
+    font-size: 25px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     position: block;
-    left: 10%;
-    top: 20%;
+    left: 100px;
+    top: 200%;
+    margin-left: 25px;
+}
+#logo{
+    margin-left: 20px;
 }
   
 nav {
     display:flex;
-    width: 110%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #000000;
+    background: #ffffff;
     height: 10vh;
 }
   
-.nav-list {
-    list-style: none;
-    position: block;
-    left: 50%;
+
+header {
+    box-shadow: 0px 0px 20px rgba(73, 73, 73, 0.1);
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
-  
-.nav-list li {
-    letter-spacing: 4px;
-    margin-left: 42px;
-    display:block;
-    top: 2%;
-     text-decoration: none;
-  
-}
-.nav-list li {
-    margin-left: 0;
-    opacity: 0;
-    top: 2%;
+   
+header, nav ul {
+    display: flex;
+    padding: 10px;
 }
   .mobile-menu {
     display: block;
+}
+#divBusca{
+    background-color:#eeeeee;
+    width:300px;
+    border-radius: 10px;
+}
+  
+#txtBusca{
+    float:left;
+    background-color:transparent ;
+    font-size:18px;
+    border:none;
+    height:30px;
+    width:260px;
+    outline: none;
 }
 
 .jiButton {
@@ -89,13 +95,6 @@ nav {
   top: 20%;
 }
 
-body {
-    color: #fff;
-    background-color: #000;
-    font-family: "Acumin Pro",sans-serif;
-    font-size: .9rem;
-    line-height: 1.6em;
-}
 
 #wonka {
     position: static;
@@ -104,24 +103,6 @@ body {
     text-align: center;
     object-fit: cover;
     border-radius:70px;
-}
-
-header {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    background: #000000;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-   
-header, nav ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-   
-nav ul li {
-    margin-left: 1rem;
 }
 
 .container {
@@ -175,6 +156,7 @@ nav ul li {
 
 .descricao {
     text-align: center;
+    margin-top: 35px;
 }
 
 .noticias {
@@ -206,7 +188,7 @@ nav ul li {
 
 
 .rodape {
-    background-color:#000000;
+    background-color:#555555;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -233,9 +215,7 @@ nav ul li {
     margin-bottom: 10px;
 }
 
-.rodape p {
-    margin: 10px 0;
-}
+
 
 .rodape a {
     color: white;
